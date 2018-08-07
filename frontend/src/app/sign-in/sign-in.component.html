@@ -1,3 +1,23 @@
-<p>
-  sign-in works!
-</p>
+<form action="/login-form">
+  <div class="imgcontainer">
+    <img src="https://i.pinimg.com/originals/14/8b/6b/148b6b3f7020ec8e016f60c714cb3439.jpg"   style="width:25%" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username:</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password:</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" style="background-color: #DDC5A2">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember Me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" style="background-color: rgb(182, 39, 39)" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">Password?</a></span>
+  </div>
+</form>
