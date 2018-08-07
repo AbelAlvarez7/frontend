@@ -1,4 +1,69 @@
-<p>
-  home works!
-</p>
-<router-outlet>Home</router-outlet>
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: 'Quicksand', sans-serif;}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top background">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="/home" class="w3-bar-item w3-button logo">Read-N-Review</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="/books" class="w3-bar-item w3-button">Books</a>
+      <a href="/scheduled-meetings" class="w3-bar-item w3-button">Scheduled Meetings</a>
+      <a class="btn btn-default-corner bg-transparent btn-signin visible-md visible-lg w3-hover-black" href="/login-form">Sign in</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;min-width:500px" id="home">
+  <img class="w3-image" src="https://media.swncdn.com/cms/CW/faith/39891-HolyBible-Bible-read-ThinkstockPhotos-585291064.1200w.tn.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-left w3-padding-large">
+    <h1 class="w3-xxlarge subtext">The Best Webiste For Organizing</h1>
+    <h1 class="w3-xxlarge subtext">Your Book Clubs</h1>
+    <a href="/login-form" class="btn btn-default-corner join subtext w3-hover-white">Join Your Club </a>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <p class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750"> "Our Picture Here"</p>
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h2 class="w3-center">About Us</h2>
+      <h5 class="w3-center">Tradition since 2018</h5>
+      <p class="w3-large w3-center">Lorem ipsum dolor sit amet, has utinam cetero epicuri at, quo patrioque theophrastus te. Blandit singulis iracundia at eam. Omittantur dissentiet vel at. Ut eirmod maiestatis temporibus vim. Wisi eius magna no vim, dolorum corpora dolores eu est. Vivendo alienum voluptua in vim, eos ut aliquam maiorum officiis.</p>
+    </div>
+  </div>
+  <br>
+   <!-- First Photo Grid-->
+   <div class="w3-row-padding w3-padding-16 w3-center img back" id="food">
+      <div class="w3-third">
+        <img src="https://www.biblword.net/wp-content/uploads/2018/02/do-christians-have-to-keep-the-old-testament-law-740x444.jpg" alt="Sandwich" style="width:100%">
+        <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+        <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="w3-third">
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/04/6f/5e/046f5eb5-a579-0c0f-400f-79da98f513dd/AppIcon-1x_U007emarketing-85-220-0-8.png/246x0w.jpg" alt="Steak" style="width:100%">
+        <h3>Let Me Tell You About This Steak</h3>
+        <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="w3-third">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/51TCM5HWXFL._SX318_BO1,204,203,200_.jpg" alt="Cherries" style="width:100%">
+        <h3>Cherries, interrupted</h3>
+        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        <p>What else?</p>
+      </div>
+    </div>  
