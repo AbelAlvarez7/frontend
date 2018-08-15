@@ -17,7 +17,7 @@ body {font-family: 'Quicksand', sans-serif;}
     <div class="w3-right w3-hide-small">
       <a href="/books" class="w3-bar-item w3-button">Books</a>
       <a href="/scheduled-meetings" class="w3-bar-item w3-button">Scheduled Meetings</a>
-      <a class="btn btn-default-corner bg-transparent btn-signin visible-md visible-lg w3-hover-black" href="/login-form">Sign in</a>
+      <button class="btn btn-default-corner bg-transparent btn-signin visible-md visible-lg w3-hover-black" action="/sign-in">Sign in</button>
     </div>
   </div>
 </div>
@@ -28,7 +28,7 @@ body {font-family: 'Quicksand', sans-serif;}
   <div class="w3-display-left w3-padding-large">
     <h1 class="w3-xxlarge subtext">The Best Webiste For Organizing</h1>
     <h1 class="w3-xxlarge subtext">Your Book Clubs</h1>
-    <a href="/login-form" class="btn btn-default-corner join subtext w3-hover-white">Join Your Club </a>
+    <a href="/sign-in" class="btn btn-default-corner join subtext w3-hover-white">Join Your Club </a>
   </div>
 </header>
 
@@ -66,4 +66,52 @@ body {font-family: 'Quicksand', sans-serif;}
         <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
         <p>What else?</p>
       </div>
-    </div>  
+    </div>
+    
+    <div id="id01" class="modal">
+  
+      <form class="modal-content animate" action="/calendar">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+            
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="/reset-password">password?</a></span>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById('id01');
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+      function myFunction() {
+          var x = document.getElementById("myInput");
+          if (x.type === "password") {
+              x.type = "text";
+          } else {
+              x.type = "password";
+          }
+      }
+      </script>
