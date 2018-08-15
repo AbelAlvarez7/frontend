@@ -1,0 +1,54 @@
+.background {
+    background: #EAD39C;
+}
+.navbar-nav .nav-link {
+    color: white;
+}
+.navbar-brand {
+    background: yellow;
+}
+
+.bg-black {
+    background: black;
+}
+.bg-grey {
+    background: grey;
+}
+/* .carousel {
+    background: url('https://esports-assets.s3.amazonaws.com/production/files/DevBlog/Header.jpg');
+    color: white;
+    background-size: cover;
+    background-position: center;
+} */
+.btn {
+    border: 1.5px solid rgba(41,41,41,.18);
+    border-radius: 50px;
+    color: #000;
+    font-size: 15px;
+    font-size: .9375rem;
+    min-width: 150px;
+    padding: 9px 15px;
+    text-transform: uppercase;
+}
+.logo {
+    font-size: 1.27rem;
+}
+.carousel {
+    height: px;
+    width: 100%;
+}
+.subtext {
+    color: white;
+    text-align: center;
+}
+.join {
+    margin-left: 225px;
+    background: black;
+}
+h5 {
+    font-style: italic;
+}
+.back {
+    background: #EAD39C;
+    
+}
